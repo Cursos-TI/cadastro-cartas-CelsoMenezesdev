@@ -10,7 +10,7 @@ int main() {
     char Estado_1;
     char Codigo_da_Carta_1 [4];
     char Nome_da_Cidade_1 [50];
-    int População_1;
+    int Populacao_1;
     float Area_1;
     float PIB_1;
     int Numero_de_Pontos_Turisticos_1;
@@ -20,7 +20,7 @@ int main() {
     char Estado_2;
     char Codigo_da_Carta_2 [4];
     char Nome_da_Cidade_2 [50];
-    int População_2;
+    int Populacao_2;
     float Area_2;
     float PIB_2;
     int Numero_de_Pontos_Turisticos_2;
@@ -38,7 +38,7 @@ int main() {
   scanf (" %s", Nome_da_Cidade_1);
 
   printf ("Digite a População_1: ");
-  scanf (" %i", &População_1);
+  scanf (" %i", &Populacao_1);
 
   printf ("Digite a Área em km²_1: ");
   scanf (" %f", &Area_1);
@@ -50,7 +50,7 @@ int main() {
   scanf (" %i", &Numero_de_Pontos_Turisticos_1);
 
   media_PIB_PERCAPITA_1 = (float)PIB_1 / População_1; // Cálculo da média do PIB per capita da primeira carta
-   densidade_Populacional_1 = (float)População_1 / Area_1; // Cálculo da densidade populacional da primeira carta
+   densidade_Populacional_1 = (float)Populacao_1 / Area_1; // Cálculo da densidade populacional da primeira carta
  // ===== ENTRADA CARTA 2 =====
   printf("\nDigite o Estado da segunda carta (A ate H): ");
   scanf(" %c", &Estado_2);
@@ -62,7 +62,7 @@ int main() {
   scanf ("%s", Nome_da_Cidade_2);
 
   printf ("Digite a População_2: ");
-  scanf ("%i", &População_2);
+  scanf ("%i", &Populacao_2);
 
   printf ("Digite a Área_2 em km²: ");
   scanf ("%f", &Area_2);
@@ -73,8 +73,8 @@ int main() {
   printf ("Digite o Número de Pontos Turísticos_2: ");
   scanf (" %i", &Numero_de_Pontos_Turisticos_2);
 
-   media_PIB_PERCAPITA_2 = (float)PIB_2 / População_2; // Cálculo da média do PIB per capita da segunda carta
-   densidade_Populacional_2 = (float)População_2 / Area_2; // Cálculo da densidade populacional da segunda carta
+   media_PIB_PERCAPITA_2 = (float)PIB_2 / Populacao_2; // Cálculo da média do PIB per capita da segunda carta
+   densidade_Populacional_2 = (float)Populacao_2 / Area_2; // Cálculo da densidade populacional da segunda carta
   // Área para exibição dos dados da cidade
     // ===== SAIDA =====
   printf ("\nPrimeira Carta: \n");
@@ -85,7 +85,7 @@ int main() {
  
   printf ("Nome da Cidade: %s\n", Nome_da_Cidade_1);
 
-  printf ("População: %i\n", População_1);
+  printf ("População: %i\n", Populacao_1);
 
   printf ("Área: %.2f km²\n", Area_1);
   
@@ -107,7 +107,7 @@ int main() {
  
   printf ("Nome da Cidade: %s\n", Nome_da_Cidade_2);
  
-  printf ("População: %i\n", População_2);
+  printf ("População: %i\n", Populacao_2);
  
   printf ("Área: %.2f km²\n", Area_2);
   
